@@ -9,6 +9,7 @@
 / {
   macros {
     mquotes: mquotes {
+      display-name = "mquotes";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -26,6 +27,7 @@
     };
 
     m_ij: m_ij {
+      display-name = "m_ij";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -35,6 +37,7 @@
     };
 
     memail: memail {
+          display-name = "memail";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
