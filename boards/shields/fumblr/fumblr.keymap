@@ -46,7 +46,7 @@
 
     Base_layer {
       bindings = <
-        &kp ESCAPE &kp D &kp R &kp W &kp F &kp U &kp P &kp INSERT &hm LGUI A &hm LALT S &hm LSHFT H &hm LCTRL T &hm RCTRL N &hm RSHFT E &hm RALT O &hm RGUI I &kp TAB &kp M &kp C &kp V &kp K &kp L &kp DOT &none &kp L &kp X &none &kp G &kp J &kp DEL &none &none &kp Z &kp Q &none &kp B &kp Y &kp BACKSPACE &none &none &kp COMMA &lt NUM CAPSLOCK &lt NAV RETURN &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE
+        &bt BT_CLR &bt BT_SEL 1 &kp R &bt BT_SEL 2 &kp F &kp U &kp P &kp INSERT &hm LGUI A &hm LALT S &hm LSHFT H &hm LCTRL T &hm RCTRL N &hm RSHFT E &hm RALT O &hm RGUI I &kp TAB &kp M &kp C &kp V &kp K &kp L &kp DOT &none &kp L &kp X &none &kp G &kp J &kp DEL &none &none &kp Z &kp Q &none &kp B &kp Y &kp BACKSPACE &none &none &kp COMMA &lt NUM CAPSLOCK &lt NAV RETURN &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE
       >;
     };
 
