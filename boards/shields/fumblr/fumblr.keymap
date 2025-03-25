@@ -48,7 +48,7 @@
       bindings = <
         &kp A       &kp B        &kp C        &kp D        &kp E            &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
         &kp F       &kp G        &kp H        &kp I        &kp J            &hm RGUI I &kp TAB   &kp M         &kp C      &kp V
-        &kp F       &kp L        &kp M        &kp N        &kp O            &kp X      &none     &kp G         &kp J      &kp DEL
+        &kp K       &kp L        &kp M        &kp N        &kp O            &kp X      &none     &kp G         &kp J      &kp DEL
         &kp P       &kp Q        &kp R        &kp S        &kp T            &kp B      &kp Y     &kp BACKSPACE &none      &none
         &kp U       &kp V        &kp W        &kp X        &kp Y            &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
         &kp Z       &kp NUMBER_1 &kp NUMBER_1 &kp NUMBER_1 &kp NUMBER_1     &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
