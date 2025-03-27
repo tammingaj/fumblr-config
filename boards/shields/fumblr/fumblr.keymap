@@ -46,7 +46,7 @@
 
     Base_layer {
       bindings = <
-        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm CLTRL T  &lt NUM CAPSLOCK      &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
+        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &lt NUM CAPSLOCK      &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
         &kp Z       &kp Q        &none        &kp B        &kp COMMA             &hm RGUI I &kp TAB   &kp M         &kp C      &kp V
         &kp ESC     &kp D        &kp R        &kp W        &none                 &kp X      &none     &kp G         &kp J      &kp DEL
         &kp L       &kp X        &none        &kp G        &none                 &kp B      &kp Y     &kp BACKSPACE &none      &none
