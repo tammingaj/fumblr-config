@@ -12,21 +12,21 @@
 
     combo_BTCLR {
       timeout-ms = <50>;
-      key-positions = <1 2 3>;
+      key-positions = <22 23 24>;
       layers = <BASE>;
       bindings = <&bt BT_CLR>;
     };
 
     combo_BT1 {
       timeout-ms = <50>;
-      key-positions = <16 17>;
+      key-positions = <41 42>;
       layers = <BASE>;
       bindings = <&bt BT_SEL 1>;
     };
 
     combo_BT2 {
       timeout-ms = <50>;
-      key-positions = <18 19>;
+      key-positions = <43 44>;
       layers = <BASE>;
       bindings = <&bt BT_SEL 2>;
     };
@@ -46,12 +46,12 @@
 
     Base_layer {
       bindings = <
-        &kp A       &kp B        &kp C        &kp D        &kp E            &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
-        &kp F       &kp G        &kp H        &kp I        &kp J            &hm RGUI I &kp TAB   &kp M         &kp C      &kp V
-        &kp K       &kp L        &kp M        &kp N        &kp O            &kp X      &none     &kp G         &kp J      &kp DEL
-        &kp P       &kp Q        &kp R        &kp S        &kp T            &kp B      &kp Y     &kp BACKSPACE &none      &none
-        &kp U       &kp V        &kp W        &kp X        &kp Y            &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
-        &kp Z       &kp NUMBER_1 &kp NUMBER_1 &kp NUMBER_1 &kp NUMBER_1     &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
+        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm CLTRL T  &lt NUM CAPSLOCK      &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
+        &kp Z       &kp Q        &none        &kp B        &kp COMMA             &hm RGUI I &kp TAB   &kp M         &kp C      &kp V
+        &kp ESC     &kp D        &kp R        &kp W        &none                 &kp X      &none     &kp G         &kp J      &kp DEL
+        &kp L       &kp X        &none        &kp G        &none                 &kp B      &kp Y     &kp BACKSPACE &none      &none
+        &kp TAB     &kp M        &kp C        &kp V        &none                 &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
+        &kp Z       &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4          &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
       >;
     };
 
