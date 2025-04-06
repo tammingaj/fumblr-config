@@ -30,6 +30,13 @@
       layers = <BASE>;
       bindings = <&bt BT_SEL 2>;
     };
+
+    combo_Z {
+          timeout-ms = <50>;
+          key-positions = <22 24>;
+          layers = <BASE>;
+          bindings = <&kp Z>;
+        };
   };
 
   behaviors {
@@ -46,12 +53,12 @@
 
     Base_layer {
       bindings = <
-        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &lt NUM CAPSLOCK      &kp U      &kp P     &kp INSERT    &hm LGUI A &hm LALT S
-        &kp Z       &kp Q        &none        &kp B        &kp COMMA             &hm RGUI I &kp TAB   &kp M         &kp C      &kp V
-        &kp ESC     &kp D        &kp R        &kp W        &none                 &kp X      &none     &kp G         &kp J      &kp DEL
-        &kp L       &kp X        &none        &kp G        &none                 &kp B      &kp Y     &kp BACKSPACE &none      &none
-        &kp TAB     &kp M        &kp C        &kp V        &none                 &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
-        &kp Z       &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4          &kp SPACE  &kp SPACE &kp SPACE     &kp SPACE  &kp SPACE
+        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &lt NUM CAPSLOCK      &lt NAV RETURN  &hm RCTRL N  &hm RSHFT E    &hm RALT O  &hm RGUI I
+        &kp Z       &kp Q        &none        &kp B        &kp COMMA             &none           &kp Y        &kp BACKSPACE  &none       &none
+        &kp ESC     &kp W        &kp D        &kp R        &none                 &none           &kp F        &kp U          &kp P       &kp INS
+        &none       &kp X        &none        &kp G        &none                 &kp SPACE       &kp J        &kp DEL        &none       &none
+        &kp TAB     &kp M        &kp C        &kp V        &none                 &none           &kp K        &kp L          &kp DOT     &none
+        &none       &none        &none        &none        &none                 &none           &none        &none          &none       &none
       >;
     };
 
