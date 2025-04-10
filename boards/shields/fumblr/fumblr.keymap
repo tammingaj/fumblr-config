@@ -58,7 +58,6 @@
         &kp ESC     &kp W        &kp D        &kp R        &none                 &none           &kp F        &kp U          &kp P       &kp INS
         &none       &kp X        &none        &kp G        &none                 &kp SPACE       &kp J        &kp DEL        &none       &none
         &kp TAB     &kp M        &kp C        &kp V        &none                 &none           &kp K        &kp L          &kp DOT     &none
-        &none       &none        &none        &none        &none                 &none           &none        &none          &none       &none
       >;
     };
 
@@ -69,7 +68,6 @@
         &none         &kp MINUS     &kp PLUS      &kp EQUAL     &none               &none         &kp SLASH     &kp BACKSLASH  &kp SINGLE_QUOTE  &none
         &none         &none         &none         &kp F5        &none               &none         &none         &none          &none             &kp F4
         &kp F1        &kp F2        &kp F3        &kp F4        &none               &kp F6        &kp F7        &kp F8         &kp F9            &kp F10
-        &none         &none         &none         &none         &none               &none         &none         &none          &none             &none
       >;
     };
 
@@ -80,7 +78,6 @@
         &kp LT       &kp LEFT_BRACKET       &kp LEFT_PARENTHESIS        &kp LEFT_BRACE        &none                &none   &kp UP     &kp PG_UP   &none      &none
         &none        &none                  &none                       &kp SEMICOLON         &none                &none   &kp RIGHT  &kp END     &none      &none
         &kp GT       &kp RIGHT_BRACKET      &kp RIGHT_PARENTHESIS       &kp RIGHT_BRACE       &kp LC(LA(DEL))      &none   &kp DOWN   &kp PG_DN   &none      &kp PRINTSCREEN
-        &none        &none                  &none                       &none                 &none                &none   &none      &none       &none      &none
       >;
     };
 
