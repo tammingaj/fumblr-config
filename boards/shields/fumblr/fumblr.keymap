@@ -64,13 +64,23 @@
 
     Num_layer {
       bindings = <
-        &none &kp MINUS &kp PLUS &kp EQUAL &kp SLASH &kp BACKSLASH &kp SINGLE_QUOTE &none &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp F1 &kp F2 &kp F3 &kp F5 &kp F6 &kp F8 &kp F9 &kp F10 &none &none &none &kp NUMBER_5 &kp F7 &none &none &none &none &none &none &kp F4 &kp NUMBER_6 &none &none &none &none &trans &kp F11 &kp F12 &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
+        &none         &none         &none         &none         &none               &none         &none         &none          &none             &kp F11
+        &none         &kp MINUS     &kp PLUS      &kp EQUAL     &none               &none         &kp SLASH     &kp BACKSLASH  &kp SINGLE_QUOTE  &none
+        &none         &none         &none         &kp F5        &none               &none         &none         &none          &none             &kp F4
+        &kp F1        &kp F2        &kp F3        &kp F4        &none               &kp F6        &kp F7        &kp F8         &kp F9            &kp F10
+        &none         &none         &none         &none         &none               &none         &none         &none          &none             &none
       >;
     };
 
     Nav_layer {
       bindings = <
-        &kp TILDE &none &none &none &kp UP &kp HOME &kp PG_UP &none &hm LGUI LT &hm LALT LEFT_BRACKET &hm LSHFT LEFT_PARENTHESIS &hm LCTRL LEFT_BRACE &kp K_COPY &kp K_PASTE &kp K_CUT &none &kp GT &kp RIGHT_BRACKET &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE &kp DOWN &kp END &kp PG_DN &none &none &none &none &none &kp RIGHT &kp K_AGAIN &none &none &none &none &none &none &kp LEFT &kp K_UNDO &none &none &none &kp LC(LA(DEL)) &trans &kp PRINTSCREEN &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE
+        &hm LGUI LT  &hm LALT LEFT_BRACKET  &hm LSHFT LEFT_PARENTHESIS  &hm LCTRL LEFT_BRACE  &kp LC(LA(DEL))      &trans  &kp LC(C)  &kp LC(V)   &kp LC(X)  &none
+        &kp TILDE    &none                  &none                       &none                 &none                &none   &kp LEFT   &kp HOME    &none      &none
+        &kp LT       &kp LEFT_BRACKET       &kp LEFT_PARENTHESIS        &kp LEFT_BRACE        &none                &none   &kp UP     &kp PG_UP   &none      &none
+        &none        &none                  &none                       &kp SEMICOLON         &none                &none   &kp RIGHT  &kp END     &none      &none
+        &kp GT       &kp RIGHT_BRACKET      &kp RIGHT_PARENTHESIS       &kp RIGHT_BRACE       &kp LC(LA(DEL))      &none   &kp DOWN   &kp PG_DN   &none      &kp PRINTSCREEN
+        &none        &none                  &none                       &none                 &none                &none   &none      &none       &none      &none
       >;
     };
 
