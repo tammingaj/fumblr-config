@@ -34,16 +34,16 @@
 
     combo_J {
       timeout-ms = <50>;
-      key-positions = <26 27>;
+      key-positions = <46 27>;
       layers = <BASE>;
-      bindings = <&kp Z>;
+      bindings = <&kp J>;
     };
 
     combo_Q {
       timeout-ms = <50>;
       key-positions = <21 22>;
       layers = <BASE>;
-      bindings = <&kp Z>;
+      bindings = <&kp Q>;
     };
 
     combo_Z {
@@ -57,7 +57,7 @@
       timeout-ms = <50>;
       key-positions = <42 43>;
       layers = <BASE>;
-      bindings = <&kp Z>;
+      bindings = <&kp X>;
     };
   };
 
@@ -75,11 +75,11 @@
 
     Base_layer {
       bindings = <
-        &none       &none        &none        &none        &none             &none       &none        &none          &none       &none
-        &kp ESC     &none        &kp C        &kp B        &kp COMMA         &kp RETURN  &kp F        &kp BACKSPACE  &kp DEL     &none
-        &none       &kp W        &kp D        &kp R        &kp CAPSLOCK      &mo FUNC    &kp Y        &kp U          &kp P       &kp INS
-        &kp TAB     &kp M        &kp V        &kp G        &mo NUM           &kp SPACE   &kp K        &kp L          &kp DOT     &none
-        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &none             &mo NAV     &hm RCTRL N  &hm RSHFT E    &hm RALT O  &hm RGUI I
+        &none       &none        &none        &none        &none                &none           &none        &none          &none       &none
+        &kp ESC     &none        &kp C        &kp B        &kp COMMA            &kp RETURN      &kp F        &kp BACKSPACE  &kp DEL     &none
+        &none       &kp W        &kp D        &kp R        &kp CAPSLOCK         &lt FUNC J      &kp Y        &kp U          &kp P       &kp INS
+        &kp TAB     &kp M        &kp V        &kp G        &lt NUM CAPSLOCK     &kp SPACE       &kp K        &kp L          &kp DOT     &none
+        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &none                &lt NAV RETURN  &hm RCTRL N  &hm RSHFT E    &hm RALT O  &hm RGUI I
       >;
     };
 
@@ -95,11 +95,11 @@
 
     Nav_layer {
       bindings = <
-        &none   &none              &none                  &none            &none               &none   &none      &none       &none  &none
-        &none   &none              &none                  &none            &none               &trans  &kp LEFT   &kp HOME    &none  &none
-        &kp LT  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &none               &none   &kp UP     &kp PG_UP   &none  &none
-        &none   &none              &none                  &kp SEMICOLON    &kp LC(LA(DEL))     &none   &kp RIGHT  &kp END     &none  &none
-        &kp GT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &none               &none   &kp DOWN   &kp PG_DN   &none  &kp PRINTSCREEN
+        &none   &none              &none                  &none            &none               &none   &none      &none       &none      &none
+        &none   &none              &none                  &none            &none               &trans  &kp LEFT   &kp HOME    &kp LC(X)  &none
+        &kp LT  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &none               &none   &kp UP     &kp PG_UP   &kp LC(V)  &none
+        &none   &none              &none                  &kp SEMICOLON    &kp LC(LA(DEL))     &none   &kp RIGHT  &kp END     &none      &none
+        &kp GT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &none               &none   &kp DOWN   &kp PG_DN   &kp LC(C)  &kp PRINTSCREEN
       >;
     };
 
