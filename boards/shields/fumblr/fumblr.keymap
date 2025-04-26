@@ -5,6 +5,7 @@
 #define BASE 0
 #define NUM 1
 #define NAV 2
+#define FUNC 3
 
 / {
   combos {
@@ -12,31 +13,52 @@
 
     combo_BTCLR {
       timeout-ms = <50>;
-      key-positions = <22 23 24>;
-      layers = <BASE>;
+      key-positions = <42 43>;
+      layers = <NAV>;
       bindings = <&bt BT_CLR>;
     };
 
     combo_BT1 {
       timeout-ms = <50>;
-      key-positions = <41 42>;
-      layers = <BASE>;
+      key-positions = <20 21>;
+      layers = <NAV>;
       bindings = <&bt BT_SEL 1>;
     };
 
     combo_BT2 {
       timeout-ms = <50>;
-      key-positions = <43 44>;
-      layers = <BASE>;
+      key-positions = <40 41>;
+      layers = <NAV>;
       bindings = <&bt BT_SEL 2>;
     };
 
+    combo_J {
+      timeout-ms = <50>;
+      key-positions = <26 27>;
+      layers = <BASE>;
+      bindings = <&kp Z>;
+    };
+
+    combo_Q {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      layers = <BASE>;
+      bindings = <&kp Z>;
+    };
+
     combo_Z {
-          timeout-ms = <50>;
-          key-positions = <22 24>;
-          layers = <BASE>;
-          bindings = <&kp Z>;
-        };
+      timeout-ms = <50>;
+      key-positions = <41 42>;
+      layers = <BASE>;
+      bindings = <&kp Z>;
+    };
+
+    combo_X {
+      timeout-ms = <50>;
+      key-positions = <42 43>;
+      layers = <BASE>;
+      bindings = <&kp Z>;
+    };
   };
 
   behaviors {
@@ -53,31 +75,41 @@
 
     Base_layer {
       bindings = <
-        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &lt NUM CAPSLOCK      &lt NAV RETURN  &hm RCTRL N  &hm RSHFT E    &hm RALT O  &hm RGUI I
-        &kp Z       &kp Q        &none        &kp B        &kp COMMA             &none           &kp Y        &kp BACKSPACE  &none       &none
-        &kp ESC     &kp W        &kp D        &kp R        &none                 &none           &kp F        &kp U          &kp P       &kp INS
-        &none       &kp X        &none        &kp G        &none                 &kp SPACE       &kp J        &kp DEL        &none       &none
-        &kp TAB     &kp M        &kp C        &kp V        &none                 &none           &kp K        &kp L          &kp DOT     &none
+        &none       &none        &none        &none        &none             &none       &none        &none          &none       &none
+        &kp ESC     &none        &kp C        &kp B        &kp COMMA         &kp RETURN  &kp F        &kp BACKSPACE  &kp DEL     &none
+        &none       &kp W        &kp D        &kp R        &kp CAPSLOCK      &mo FUNC    &kp Y        &kp U          &kp P       &kp INS
+        &kp TAB     &kp M        &kp V        &kp G        &mo NUM           &kp SPACE   &kp K        &kp L          &kp DOT     &none
+        &hm LGUI A  &hm LALT S   &hm LSHFT H  &hm LCTRL T  &none             &mo NAV     &hm RCTRL N  &hm RSHFT E    &hm RALT O  &hm RGUI I
       >;
     };
 
     Num_layer {
       bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
-        &none         &none         &none         &none         &none               &none         &none         &none          &none             &kp F11
+        &none         &none         &none         &none         &none               &none         &none         &none          &none             &none
+        &none         &none         &none         &none         &none               &none         &none         &none          &kp TILDE         &none
         &none         &kp MINUS     &kp PLUS      &kp EQUAL     &none               &none         &kp SLASH     &kp BACKSLASH  &kp SINGLE_QUOTE  &none
-        &none         &none         &none         &kp F5        &none               &none         &none         &none          &none             &kp F4
-        &kp F1        &kp F2        &kp F3        &kp F4        &none               &kp F6        &kp F7        &kp F8         &kp F9            &kp F10
+        &none         &none         &none         &kp NUMBER_5  &trans              &none         &none         &none          &none             &none
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none               &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
       >;
     };
 
     Nav_layer {
       bindings = <
-        &hm LGUI LT  &hm LALT LEFT_BRACKET  &hm LSHFT LEFT_PARENTHESIS  &hm LCTRL LEFT_BRACE  &kp LC(LA(DEL))      &trans  &kp LC(C)  &kp LC(V)   &kp LC(X)  &none
-        &kp TILDE    &none                  &none                       &none                 &none                &none   &kp LEFT   &kp HOME    &none      &none
-        &kp LT       &kp LEFT_BRACKET       &kp LEFT_PARENTHESIS        &kp LEFT_BRACE        &none                &none   &kp UP     &kp PG_UP   &none      &none
-        &none        &none                  &none                       &kp SEMICOLON         &none                &none   &kp RIGHT  &kp END     &none      &none
-        &kp GT       &kp RIGHT_BRACKET      &kp RIGHT_PARENTHESIS       &kp RIGHT_BRACE       &kp LC(LA(DEL))      &none   &kp DOWN   &kp PG_DN   &none      &kp PRINTSCREEN
+        &none   &none              &none                  &none            &none               &none   &none      &none       &none  &none
+        &none   &none              &none                  &none            &none               &trans  &kp LEFT   &kp HOME    &none  &none
+        &kp LT  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &none               &none   &kp UP     &kp PG_UP   &none  &none
+        &none   &none              &none                  &kp SEMICOLON    &kp LC(LA(DEL))     &none   &kp RIGHT  &kp END     &none  &none
+        &kp GT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &none               &none   &kp DOWN   &kp PG_DN   &none  &kp PRINTSCREEN
+      >;
+    };
+
+    Func_layer {
+      bindings = <
+        &none    &none    &none   &none   &none        &none   &none   &none   &none   &none
+        &none    &none    &none   &none   &none        &none   &kp F6  &none   &none   &none
+        &kp F11  &kp F12  &none   &none   &none        &none   &none   &none   &none   &none
+        &none    &none    &none   &none   &none        &trans  &none   &none   &none   &none
+        &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &none   &kp F7  &kp F8  &kp F9  &kp F10
       >;
     };
 
